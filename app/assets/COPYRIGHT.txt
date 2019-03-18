@@ -1,0 +1,8 @@
+The copyright of the images and the flr file contained in this folder and 
+its subordinates is as follows:
+
+    Copyright (C) 2019 DeNA Co., Ltd. All rights Reserved.
+
+
+ANY INCLUDED IMAGES ARE PROVIDED FOR TESTING PURPOSES ONLY.
+NO FURTHER USE OR DISTRIBUTION OF THESE IMAGES IS ALLOWED.

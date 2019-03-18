@@ -1,0 +1,25 @@
+name: repository_cache
+description: A Repository Flutter project.
+version: 0.0.1
+author:
+homepage:
+
+environment:
+  sdk: ">=2.0.0-dev.68.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  commons:
+    path: ../commons
+  repository:
+    path: ../repository
+
+  http: ^0.12.0+1
+  shared_preferences: ^0.4.3
+
+flutter:
+  plugin:
+    androidPackage: com.dena.techcon.app.repositorycache
+    pluginClass: RepositoryCachePlugin

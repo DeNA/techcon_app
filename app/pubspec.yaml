@@ -1,0 +1,83 @@
+name: app
+description: DeNA TechCon App
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# Read more about versioning at semver.org.
+version: 1.0.2+7
+
+environment:
+  sdk: ">=2.0.0-dev.68.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  cupertino_icons: ^0.1.2
+
+  url_launcher: ^4.1.0+1
+  cached_network_image: ^0.5.1
+  flutter_advanced_networkimage: ^0.4.0-alpha
+
+#  google_maps_flutter: ^0.0.3+3
+  google_maps_flutter:
+    path: ../plugins/packages/google_maps_flutter/
+
+  package_info: ^0.3.2
+  flare_flutter:
+
+  firebase_messaging: ^2.1.0
+  firebase_analytics: ^1.0.6
+  flutter_crashlytics: ^0.1.1
+
+  shared_preferences: ^0.4.3
+
+  commons:
+    path: ../commons
+  architecture:
+    path: ../architecture
+  repository_local:
+    path: ../repository_local
+  repository_cache:
+    path: ../repository_cache
+  repository:
+    path: ../repository
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+# TIPS: Because it causes an error in LicensePage, disable it when not using it.
+#  flutter_launcher_icons: ^0.7.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/ic_launcher.png
+    - assets/images/stage_map.png
+    - assets/images/message.png
+    - assets/images/logo_shift_up.png
+    - assets/images/logo.png
+    - assets/images/img_energy_drink.png
+
+    - assets/animations/Logo.flr
+
+    - assets/locales/messages.json
+
+  fonts:
+    - family: Montserrat
+      fonts:
+        - asset: assets/fonts/Montserrat-Regular.ttf
+        - asset: assets/fonts/Montserrat-Medium.ttf
+          weight: 500
+#        - asset: assets/fonts/Montserrat-Bold.ttf
+#          weight: 700
+#        - asset: assets/fonts/Montserrat-Italic.ttf
+#          style: italic
+

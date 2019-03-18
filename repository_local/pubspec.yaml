@@ -1,0 +1,14 @@
+name: repository_local
+description: A Repository Local Flutter project.
+version: 0.0.1
+author:
+homepage:
+
+environment:
+  sdk: ">=2.0.0-dev.68.0 <3.0.0"
+
+dependencies:
+  commons:
+    path: ../commons
+  repository:
+    path: ../repository

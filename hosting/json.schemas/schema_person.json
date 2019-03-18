@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "name": {
+      "type": "string"
+    },
+    "company": {
+      "type": "string"
+    },
+    "team": {
+      "type": "string"
+    },
+    "profile": {
+      "type": "string"
+    },
+    "imageUrl": {
+      "type": "string"
+    },
+    "sns": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "icon": {
+              "type": "string"
+            },
+            "url": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "icon",
+            "url"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "text",
+    "icon"
+  ]
+}

@@ -1,0 +1,148 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "array",
+    "items": [
+      {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "persons": {
+            "type": "array",
+            "items": [
+              {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "integer"
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "company": {
+                    "type": "string"
+                  },
+                  "team": {
+                    "type": "string"
+                  },
+                  "profile": {
+                    "type": "string"
+                  },
+                  "imageUrl": {
+                    "type": "string"
+                  },
+                  "sns": {
+                    "type": "array",
+                    "items": [
+                      {
+                        "type": "object",
+                        "properties": {
+                          "icon": {
+                            "type": "string"
+                          },
+                          "url": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "icon",
+                          "url"
+                        ]
+                      }
+                    ]
+                  }
+                },
+                "required": [
+                  "id",
+                  "name",
+                  "profile",
+                  "imageUrl"
+                ]
+              }
+            ]
+          },
+          "business": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "integer"
+              },
+              "category": {
+                "type": "object",
+                "properties": {
+                  "text": {
+                    "type": "string"
+                  },
+                  "icon": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "text",
+                  "icon"
+                ]
+              },
+              "services": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "name": {
+                        "type": "string"
+                      },
+                      "url": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "name",
+                      "url"
+                    ]
+                  }
+                ]
+              },
+              "stage": {
+                "type": "string"
+              },
+              "start_at": {
+                "type": "string"
+              },
+              "end_at": {
+                "type": "string"
+              },
+              "tags": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "string"
+                  }
+                ]
+              },
+              "title": {
+                "type": "string"
+              },
+              "text": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "id",
+              "stage",
+              "start_at",
+              "end_at",
+              "tags",
+              "title",
+              "text"
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "persons",
+          "business"
+        ]
+      }
+    ]
+  }
